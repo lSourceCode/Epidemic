@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /dk
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/et1907?serverTimezone=GMT
+    username: root
+    password: etoak
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml
+  type-aliases-package: edu.dzkj.Epidemic.bean
+
+pagehelper:
+  reasonable: true
